@@ -1,0 +1,23 @@
+.pragma library
+
+// Quiet iOS-inspired surfaces adapted to a Windows engineering desktop.
+var canvas = "#F2F2F7"
+var canvasRaised = "#F7F7FA"
+var surface = "#FFFFFF"
+var surfaceMuted = "#F8F8FA"
+var border = "#E5E5EA"
+var borderStrong = "#D2D6DF"
+var text = "#1C1C1E"
+var secondary = "#63666D"
+var tertiary = "#8E8E93"
+var blue = "#007AFF"
+var bluePressed = "#0062CC"
+var blueTint = "#EAF3FF"
+var green = "#2DAA62"
+var orange = "#E7951D"
+var red = "#D94D45"
+var purple = "#8657B8"
+var rod1 = "#E96A4A"
+var rod2 = "#3974C9"
+var rod3 = "#1B9D93"
+var rod4 = "#8657B8"

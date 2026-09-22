@@ -1,0 +1,27 @@
+{
+  "schema": "ucm2-force-camera-source-provenance/v1",
+  "source_path": "G:/Ultra ClampMonitor/Project refactoring code/windows_calibration/force_input_camera",
+  "historical_freeze_commit": "2940bb8d71bb334b72e6321133e980870f575115",
+  "historical_freeze_subject": "Freeze offline seven-segment camera pipeline",
+  "migration_note": "Copied byte-for-byte from the user-designated read-only oracle. Package-only test imports are changed from windows_calibration.force_input_camera to windows.force_input_camera outside this file list.",
+  "formal_runtime_use": false,
+  "allowed_use": "manual/offline calibration and review evidence only",
+  "files_sha256": {
+    "__init__.py": "5384bfdb2df380b6557cc7a71d16891415bccaa87699406e236f752c6415389f",
+    "calibrate_rois.py": "937e2cb589541eeed402833c21fea78ce4e3d827f001b15b7cc7fdd041e77f44",
+    "capture_once.py": "5e36ede8cd7deef378305d7aa6eda04206509d93b2cb1247b2872dc803d3d104",
+    "capture_queue.py": "45562bdd219441de1342ed7ecd4faf3ad74c056f322f863de985ef61abaec7fc",
+    "config.json": "60e109770aa8a318dc9d8a2f11585268d75cefa2de0f5aed4463b6c57f7cdae0",
+    "force_input_mapper.py": "0038a84bcdc34ee3a57a844bb6655025b815060663606d5989b0bdb5624befc0",
+    "FREEZE_v0.1.md": "e0ff57943bee9ae5c6ac2721f92ce8e7e627617db6323cf21b363c4c28f4623b",
+    "hikrobot_camera.py": "e6a600918d34590519bdf6d1ebc34027fefdc290ed92c450c15081edb62d7e31",
+    "image_io.py": "92076458690c8fea4ed5bb4e8c922b1d84323829b8f74513c1c377dd910efc70",
+    "offline_queue.py": "682e57f4f467ebadcd061044db6648a96e1149477a85ff9165ca23e4b7c722ba",
+    "README.md": "29d25a682b9926ef32f11f3d0f3336184a5558e8d295c8a049651c1dfd87397e",
+    "recognition_quality.py": "f38d00cf8257a2131e3cc1904dd1315e420ece63aa24923da37e08cd1a2948bd",
+    "recognize_queue.py": "dee55658b8879374fed103e88fc690933f51edbe152af0c3903a13f8791c1dd5",
+    "requirements.txt": "4278e1248d79049d3d7b94a71ef621269af775ce0b5072aa2a33d79bcb8a76c8",
+    "rois.json": "3ed4398f5ff18d3e2516c969d0b7a2d656ae899c668b7dcff8ef3dbf2717262a",
+    "seven_segment_recognize.py": "898ce3da529ba5daba71987ab771fe3504fbe392f05cdbe2b035443e23352215"
+  }
+}

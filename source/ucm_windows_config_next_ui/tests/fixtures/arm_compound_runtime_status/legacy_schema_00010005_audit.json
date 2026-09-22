@@ -1,0 +1,19 @@
+{
+  "status": "REJECTION_AND_ROLLBACK_AUDIT_ONLY",
+  "accepted_by_current_windows": false,
+  "source_commit": "c14f7cd125d18c569a482d26ec512f0747281816",
+  "source_tree": "9429d357a83e32ca1632ef0dae8cea59eb670933",
+  "acquisition_register_schema": "0x00010005",
+  "product_descriptor_decoded_sha256": "b1c6a3609a45c9268e416c0abefcbe50d0f18de11a5bc74900dc6d73a070be3b",
+  "product_descriptor_internal_crc32": "0x555f959d",
+  "product_descriptor_transport_crc32": "0x027eae31",
+  "superseded_vector_sha256": {
+    "caf2_frame_ready.bin": "0a6b4c2b8ce704e7933b4f0758de5fb0c9b98edd15de7ee7be00c4c720fee37d",
+    "cfs2_slot_writing.bin": "1a650e077a831b93227722856e92fb445f665e19b2dd1f30172fd3415faf85f4",
+    "cfs2_slot_reading.bin": "e0484545bf59b78de592871108c242bfabe55fdb1deaf40ce578501979755fd8",
+    "reject_caf2_wrong_family_cad2.bin": "721657a787051110e07dd9a47a20ee521a7afc0cd83844afdf197019c616ee20",
+    "reject_caf2_diagnostic_type4.bin": "9822379c61967977035b027af387374b823d9254da19c86f9a6fc74864498847",
+    "reject_cfs2_wrong_family_cds2.bin": "3ce37dccd21706b66fe5f6c1dafb4e6a2f1582ea7a933fe0bee1d70496d969e3",
+    "reject_cfs2_descriptor_internal_crc.bin": "e7f6a6d67c1e2c591d42e57d9e176b7ac48d2e41c69b94a40e79fd53c3f1a400"
+  }
+}

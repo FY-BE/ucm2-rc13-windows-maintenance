@@ -1,0 +1,51 @@
+{
+  "schema": "ucm.windows.arm-schema6-rebind-audit/v1",
+  "status": "BYTE_IDENTICAL_REBIND_ONLY",
+  "previous_source": {
+    "commit": "212a963d9725000873da5f169cb3a737245b11c7",
+    "tree": "764b239f63353968cc565379523dfab286b876f3"
+  },
+  "current_source": {
+    "commit": "e440037f415c1d2ae76f59227596ca9867bc45cb",
+    "tree": "dd837f231e8b839da47feb3ed8a5b711d2c2fcbe"
+  },
+  "acquisition_schema": {
+    "value": "0x00010006",
+    "registers_source_path": "src/linux/ucm_candidate_r0/acquisition/ucm_acquisition_regs_v1.h",
+    "registers_git_blob_previous": "93b459851db33a792c1a08b93f727038b89d064f",
+    "registers_git_blob_current": "93b459851db33a792c1a08b93f727038b89d064f",
+    "product_identity_source_path": "src/linux/ucm_candidate_r0/acquisition/ucm_product_identity_v1.h",
+    "product_identity_git_blob_previous": "6f82f458c0aee62a54644a5ee68423871905d607",
+    "product_identity_git_blob_current": "6f82f458c0aee62a54644a5ee68423871905d607",
+    "identical": true
+  },
+  "product_descriptor": {
+    "source_path": "src/linux/ucm_candidate_r0/tests/ucm_product_descriptor_golden_fixture_v4.h",
+    "git_blob_previous": "d7d1e405f70ceb10238a08558d2da44c599a5725",
+    "git_blob_current": "d7d1e405f70ceb10238a08558d2da44c599a5725",
+    "bytes": 256,
+    "decoded_sha256": "b4647d2b4887311fbc3ad965251e27c0ce78862b167381de9805d6869898674b",
+    "internal_crc32": "0x7fe32515",
+    "transport_crc32": "0x89fde312",
+    "identical": true
+  },
+  "d020_d021_wire": {
+    "source_path": "src/linux/ucm_candidate_r0/tests/fixtures/ucm_d020_d021_r1",
+    "contract_git_blob_previous": "24480b8511cc39dfc0a3e5b089962ec069f0dee8",
+    "contract_git_blob_current": "24480b8511cc39dfc0a3e5b089962ec069f0dee8",
+    "contract_sha256": "b189081d5460d0cc2c6317df5171c799ee669ab0b9b54afb0dbb872f0e10e820",
+    "wire_vector_count": 15,
+    "wire_vector_differences": 0,
+    "wire_vectors_identical": true,
+    "generator_git_blob_previous": "3b724a66b97d9bb1d973fe9be93e23888de2c48c",
+    "generator_git_blob_current": "21f8ecde4b202c4fb957f519880170c7a1d8b603",
+    "generator_change_scope": "CANONICAL_TEXT_CRLF_TOLERANCE_ONLY"
+  },
+  "credit": {
+    "windows_source_rebind": true,
+    "wire_contract_change": false,
+    "system_cutover": false,
+    "board_qualified": false,
+    "nvm": false
+  }
+}

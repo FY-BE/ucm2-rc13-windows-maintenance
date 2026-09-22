@@ -1,0 +1,302 @@
+{
+  "schema": "hikrobot-seven-segment-camera-delivery/v1",
+  "package_id": "HIKROBOT_SEVEN_SEGMENT_CAMERA_DELIVERY_20260813_r3",
+  "created_at_utc": "2026-08-13T08:08:57.570282+00:00",
+  "source": {
+    "git_commit": "c995d5c07bd8aca77f1137718bcf917535388964",
+    "git_tree": "6ef6fa80722b757a90cecbfecc782ae7491cb9fb",
+    "branch": "codex/cad-agc-standalone-diagnostic",
+    "source_archive": "SOURCE_FROM_GIT_c995d5c.zip"
+  },
+  "scope": [
+    "Hikrobot MVS camera adapter",
+    "seven-segment recognition",
+    "ROI calibration",
+    "offline queue/CSV",
+    "manual review evidence"
+  ],
+  "verification": {
+    "python": "3.14.2",
+    "pytest": "29 passed",
+    "memory_compile_python_files": 36,
+    "cli_help_entries": 4,
+    "logs_path": "verification/"
+  },
+  "artifacts": [
+    {
+      "path": "README_FIRST.md",
+      "bytes": 3007,
+      "sha256": "be0414ff9660c33b688c61dfb0b0a0754a3f3e000da090b106d2409b9fc75f98"
+    },
+    {
+      "path": "SOURCE_FROM_GIT_c995d5c.zip",
+      "bytes": 101234,
+      "sha256": "6ce4754556ad2d7e952b4ef10fa66381d02f1b7b33c83ffebecd7f765279dea8"
+    },
+    {
+      "path": "tests/test_force_camera_source_provenance.py",
+      "bytes": 1047,
+      "sha256": "834b442d8d366ff821159eb6f512bcf4a68f3f4133a9c688e038339be148b479"
+    },
+    {
+      "path": "tests/test_windows_production_chain.py",
+      "bytes": 11407,
+      "sha256": "e726245a1da416a9f569b010167d7e76fa133055c2477c45ba615be2976cd74a"
+    },
+    {
+      "path": "verification/calibrate_rois_help.txt",
+      "bytes": 480,
+      "sha256": "b0eaed0124f04eadf938e5ce797161198c1303cd0fdc5f3f8df8cf0eba386fb4"
+    },
+    {
+      "path": "verification/camera_review_help.txt",
+      "bytes": 2381,
+      "sha256": "9eca6bbc50886c6ae525430ec0d191987358c5e26c116e2fdf789c34beb10555"
+    },
+    {
+      "path": "verification/capture_once_help.txt",
+      "bytes": 855,
+      "sha256": "5bc281246d4e9cec3c32a3f283904b1cfdf2df9adaa44a6d1b51e3abd9e4ace5"
+    },
+    {
+      "path": "verification/pytest.log",
+      "bytes": 104,
+      "sha256": "5c9f55a98fbf86311ec4c824f1d1fa75bd4e44c1e04a51a90e1a59ee3dab721d"
+    },
+    {
+      "path": "verification/seven_segment_help.txt",
+      "bytes": 421,
+      "sha256": "5d10ced714fcb14b376f7a0c095a058b388eb8006db042ed69e946b6f9084146"
+    },
+    {
+      "path": "verification/syntax_compile.log",
+      "bytes": 40,
+      "sha256": "1d77ec3a7854c1fb1f367fc6dcf71e88a80acf266220133bd4021f759c83b207"
+    },
+    {
+      "path": "windows/__init__.py",
+      "bytes": 115,
+      "sha256": "a9827d65ba43716074a3734e303247cec4cc634fbd56ae4bbbc2faeb8a440881"
+    },
+    {
+      "path": "windows/force_input_camera/__init__.py",
+      "bytes": 35,
+      "sha256": "5384bfdb2df380b6557cc7a71d16891415bccaa87699406e236f752c6415389f"
+    },
+    {
+      "path": "windows/force_input_camera/calibrate_rois.py",
+      "bytes": 2669,
+      "sha256": "937e2cb589541eeed402833c21fea78ce4e3d827f001b15b7cc7fdd041e77f44"
+    },
+    {
+      "path": "windows/force_input_camera/capture_once.py",
+      "bytes": 3175,
+      "sha256": "5e36ede8cd7deef378305d7aa6eda04206509d93b2cb1247b2872dc803d3d104"
+    },
+    {
+      "path": "windows/force_input_camera/capture_queue.py",
+      "bytes": 4774,
+      "sha256": "45562bdd219441de1342ed7ecd4faf3ad74c056f322f863de985ef61abaec7fc"
+    },
+    {
+      "path": "windows/force_input_camera/config.json",
+      "bytes": 1612,
+      "sha256": "60e109770aa8a318dc9d8a2f11585268d75cefa2de0f5aed4463b6c57f7cdae0"
+    },
+    {
+      "path": "windows/force_input_camera/DELIVERY_README.md",
+      "bytes": 2312,
+      "sha256": "41b137caf4053ff4346076ae246085dc08e4128dff5dbf51b3bc88b5632e1506"
+    },
+    {
+      "path": "windows/force_input_camera/force_input_mapper.py",
+      "bytes": 5472,
+      "sha256": "0038a84bcdc34ee3a57a844bb6655025b815060663606d5989b0bdb5624befc0"
+    },
+    {
+      "path": "windows/force_input_camera/FREEZE_v0.1.md",
+      "bytes": 3842,
+      "sha256": "e0ff57943bee9ae5c6ac2721f92ce8e7e627617db6323cf21b363c4c28f4623b"
+    },
+    {
+      "path": "windows/force_input_camera/hikrobot_camera.py",
+      "bytes": 11140,
+      "sha256": "e6a600918d34590519bdf6d1ebc34027fefdc290ed92c450c15081edb62d7e31"
+    },
+    {
+      "path": "windows/force_input_camera/image_io.py",
+      "bytes": 663,
+      "sha256": "92076458690c8fea4ed5bb4e8c922b1d84323829b8f74513c1c377dd910efc70"
+    },
+    {
+      "path": "windows/force_input_camera/local/.gitignore",
+      "bytes": 25,
+      "sha256": "aae815b9313ef60fb99d51bec324f3de1cea5256d6bbf58a660578b3e2d5815c"
+    },
+    {
+      "path": "windows/force_input_camera/local/README.md",
+      "bytes": 310,
+      "sha256": "27098d19ff0b5cfbe8ac1d699946585d1ada91b31e4c92c5ad90c278c12b3246"
+    },
+    {
+      "path": "windows/force_input_camera/offline_queue.py",
+      "bytes": 1453,
+      "sha256": "682e57f4f467ebadcd061044db6648a96e1149477a85ff9165ca23e4b7c722ba"
+    },
+    {
+      "path": "windows/force_input_camera/README.md",
+      "bytes": 4526,
+      "sha256": "29d25a682b9926ef32f11f3d0f3336184a5558e8d295c8a049651c1dfd87397e"
+    },
+    {
+      "path": "windows/force_input_camera/recognition_quality.py",
+      "bytes": 2623,
+      "sha256": "f38d00cf8257a2131e3cc1904dd1315e420ece63aa24923da37e08cd1a2948bd"
+    },
+    {
+      "path": "windows/force_input_camera/recognize_queue.py",
+      "bytes": 5643,
+      "sha256": "dee55658b8879374fed103e88fc690933f51edbe152af0c3903a13f8791c1dd5"
+    },
+    {
+      "path": "windows/force_input_camera/requirements.txt",
+      "bytes": 20,
+      "sha256": "4278e1248d79049d3d7b94a71ef621269af775ce0b5072aa2a33d79bcb8a76c8"
+    },
+    {
+      "path": "windows/force_input_camera/rois.json",
+      "bytes": 189,
+      "sha256": "3ed4398f5ff18d3e2516c969d0b7a2d656ae899c668b7dcff8ef3dbf2717262a"
+    },
+    {
+      "path": "windows/force_input_camera/seven_segment_recognize.py",
+      "bytes": 13138,
+      "sha256": "898ce3da529ba5daba71987ab771fe3504fbe392f05cdbe2b035443e23352215"
+    },
+    {
+      "path": "windows/force_input_camera/SOURCE_PROVENANCE.json",
+      "bytes": 2132,
+      "sha256": "c34ee2d2a41010e93f5f945b28844dbcae42bb61982e6e95cb07e480757a4ef7"
+    },
+    {
+      "path": "windows/force_input_camera/tests/conftest.py",
+      "bytes": 205,
+      "sha256": "99b2f169e265ab3f416a0586b5a76bcbaf6afa896b4b9322f124cdbdf52ce79d"
+    },
+    {
+      "path": "windows/force_input_camera/tests/test_camera_sdk.py",
+      "bytes": 3639,
+      "sha256": "9b8b88db7ee58537cf9944665a1b28d78cff148f91abf8b00c4fc8afbe84f8ab"
+    },
+    {
+      "path": "windows/force_input_camera/tests/test_capture_queue.py",
+      "bytes": 961,
+      "sha256": "b78d14898970f4fbc4d7f1ab6522faac51574b0c7857abcd51430b96c455f4b4"
+    },
+    {
+      "path": "windows/force_input_camera/tests/test_image_io.py",
+      "bytes": 1011,
+      "sha256": "8fc95fd55f8077212b8acc16d38d587af0a79f195434f2650dc26e8cd3ea0bf0"
+    },
+    {
+      "path": "windows/force_input_camera/tests/test_offline_queue.py",
+      "bytes": 1757,
+      "sha256": "16cd5304de355c201e2d55c797b7f559778f37859187a996c7751dfa56646a8e"
+    },
+    {
+      "path": "windows/force_input_camera/tests/test_outputs.py",
+      "bytes": 1211,
+      "sha256": "10a1d1e1ec6eea16f41bc3c38840338fbb46d56bfa4bdde05d31c1565065d3a9"
+    },
+    {
+      "path": "windows/force_input_camera/tests/test_recognition_quality.py",
+      "bytes": 3827,
+      "sha256": "be9fd5b2284573c3ede2add8ff52a4be2bdbfffee2af2f397330983babed2f03"
+    },
+    {
+      "path": "windows/force_input_camera/tests/test_recognize_queue.py",
+      "bytes": 2026,
+      "sha256": "cc259ba0c8ff26c7194447bb90178d3b37b4d5d20f5139f91a9db303de2fab81"
+    },
+    {
+      "path": "windows/force_input_camera/WORKFLOW_CN.md",
+      "bytes": 6029,
+      "sha256": "6010418733d5867310e975969c6ea406d22fc2f0759af7084ea5faaac148d784"
+    },
+    {
+      "path": "windows/ucm2_host/__init__.py",
+      "bytes": 2441,
+      "sha256": "274166e891836d6a8e69717a4393949c86040881b3372c39123c8e39e8bdf27b"
+    },
+    {
+      "path": "windows/ucm2_host/audit.py",
+      "bytes": 8330,
+      "sha256": "64beeb91ea86f6f75135890266af6ec90df0a2af1d7fabdebcbba7c3254aaaa0"
+    },
+    {
+      "path": "windows/ucm2_host/camera_ocr.py",
+      "bytes": 9179,
+      "sha256": "c4010662787c12bf3f434632206b4355045c7dc8394f67d7b1a6cf95f90cae10"
+    },
+    {
+      "path": "windows/ucm2_host/camera_review.py",
+      "bytes": 16582,
+      "sha256": "dd99c928a01b62166acdb88d9d15e17825cee642d95255e6bdffd13859e72255"
+    },
+    {
+      "path": "windows/ucm2_host/config.py",
+      "bytes": 17916,
+      "sha256": "d5f04b7b845361089820553e5f12a25b7311203603a3d027f6ac21ef9b0ed3f9"
+    },
+    {
+      "path": "windows/ucm2_host/coordinator.py",
+      "bytes": 11618,
+      "sha256": "6b1bc73637da518c855376bd042f667d11428be3cf2da3363df5ff52e077f85b"
+    },
+    {
+      "path": "windows/ucm2_host/evidence.py",
+      "bytes": 21298,
+      "sha256": "b150bdb8b64493c60c30b90f1bd647c4cfdd29c0c2cb4b7647de8bea630b760f"
+    },
+    {
+      "path": "windows/ucm2_host/offline_analysis.py",
+      "bytes": 12591,
+      "sha256": "deaf9796783e9a8122e5414bd7e250e8deb9b35040dcf595d7a538913594e9e3"
+    },
+    {
+      "path": "windows/ucm2_host/production_cli.py",
+      "bytes": 7995,
+      "sha256": "728e8143b9714348cf0708e32a773b38673123aa2c9c0dc47c266a7e351ce251"
+    },
+    {
+      "path": "windows/ucm2_host/protocol.py",
+      "bytes": 19676,
+      "sha256": "02d06bd4a3c5cb37b7088240e3fbd52980876d9fe69fb1e73693a9588ab8d144"
+    },
+    {
+      "path": "windows/ucm2_host/README.md",
+      "bytes": 6362,
+      "sha256": "96c5ec3166d1cc83c8fe6fa35e91367545710540e890684c389af273b53142c7"
+    },
+    {
+      "path": "windows/ucm2_host/runtime_monitor.py",
+      "bytes": 23264,
+      "sha256": "5c24d802153eb45667164f1294445e020f9669ea38e1b5092c6e5b3fc7289913"
+    },
+    {
+      "path": "windows/ucm2_host/session_evidence.py",
+      "bytes": 31244,
+      "sha256": "d20162c53f0ffcb9028d171b26ea2dcc89fb3439ee11fc0f877e0d813aa1d7c3"
+    },
+    {
+      "path": "windows/ucm2_host/store.py",
+      "bytes": 28186,
+      "sha256": "cb52c55e148ea192d16a54fa3a3e91a3aa8ddf608d999039c223506cb6fbd8b1"
+    },
+    {
+      "path": "windows/ucm2_host/transport.py",
+      "bytes": 8988,
+      "sha256": "d5ef3a591902ec638d7613e22619b6a9827815d8171ea054486a0617d0bc7e1a"
+    }
+  ]
+}

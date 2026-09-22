@@ -1,0 +1,53 @@
+{
+  "schema": "ucm.windows.pl-runtime-identities/v1",
+  "status": "SIGNED_SYSTEM_MANIFEST_CLAIMS_REQUIRED",
+  "product": {
+    "role": "PRODUCT",
+    "commit": "984b863aaa2ed961e409dd2b755bd32bec6154e6",
+    "tree": "32806276e08db09ae2f8da6e6a147d791f1006bf",
+    "source_closure_sha256": "3150b0d0acbf5ebb780f617d643dbc0578c6fcd0229fd8a9be17a50cf541807a",
+    "profiles": {
+      "50m14": {
+        "bitstream_bytes": 2492099,
+        "bitstream_sha256": "857cb7db1728f10ecb20777f8af34a0aaa6eebf7a4ca29b5bc9db61cfb001dae"
+      },
+      "65m14": {
+        "bitstream_bytes": 2497435,
+        "bitstream_sha256": "19c43e89a8073d7708fe45104e797248dc7871289403966bf8b8b1e1ac4f143f"
+      }
+    },
+    "product_eligible": true,
+    "bitstream_candidate_generation_credit": true,
+    "board_qualified": false,
+    "hil": false,
+    "nvm": false,
+    "system_cutover": false
+  },
+  "safety_diagnostic": {
+    "role": "SAFETY_DIAGNOSTIC_NO_TX_NO_HV",
+    "policy": "INDEPENDENT_NO_TX_NO_HV",
+    "commit": "4ab5fdbe79ab90d5f75efe7309c13405277ac64a",
+    "tree": "f5a69e16d81fe87506dead571a4be192ef773cc2",
+    "source_closure_sha256": "4e38b58ec75454ed1e3fc9d4d383a9b6553a011f1c2d5acdc22c0de1492b9e0b",
+    "profile": "50m14",
+    "bitstream_bytes": 1985409,
+    "bitstream_sha256": "4634f70c6b584acd3ec1bce15214b05e159634d5961e07f1ce515315a00f1f19",
+    "display_only": true,
+    "product_eligible": false,
+    "tx_path_present": false,
+    "hv_path_present": false,
+    "board_qualified": false,
+    "hil": false,
+    "nvm": false,
+    "system_cutover": false
+  },
+  "windows_boundary": {
+    "identity_source": "SIGNED_SYSTEM_MANIFEST_CLAIMS_ONLY",
+    "direct_open_ioctl_mmap_driver_path": false,
+    "hardware_truth_authority": false,
+    "algorithm_truth_authority": false,
+    "product_ready_requires_exact_product_tuple": true,
+    "diagnostic_identity_can_promote_product": false,
+    "installer_release_waits_for_system_manifest": true
+  }
+}

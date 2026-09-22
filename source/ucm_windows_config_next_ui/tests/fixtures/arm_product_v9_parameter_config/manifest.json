@@ -1,0 +1,56 @@
+{
+  "schema": "UCM_USB_REVISION9_PARAMETER_CONFIG_V1",
+  "wire_revision": 9,
+  "byte_order": "little",
+  "messages": {
+    "PARAMETER_CATALOG": 17,
+    "CONFIG_STATE": 18,
+    "CONFIG_APPLY": 19
+  },
+  "objects": {
+    "CATALOG_DESCRIPTORS": {
+      "entries": 65,
+      "descriptor_bytes": 48,
+      "crc32": "0xa6dc1ee6"
+    },
+    "CFG2": {
+      "schema": 2,
+      "revision": 4,
+      "bytes": 384
+    },
+    "UCQ2": {
+      "schema": 2,
+      "bytes": 32
+    },
+    "UCR2": {
+      "schema": 2,
+      "bytes": 768,
+      "field_results": 48
+    },
+    "UHW2": {
+      "schema": 2,
+      "bytes": 112,
+      "offset_in_ucr2": 656
+    }
+  },
+  "operations": {
+    "APPLY_ACTIVE": 1,
+    "SAVE_STARTUP": 2,
+    "VALIDATE_ONLY": 3
+  },
+  "query_kinds": {
+    "LATEST": 1,
+    "ACTIVE": 2,
+    "STARTUP": 3,
+    "TRANSACTION": 4
+  },
+  "sha256": {
+    "parameter_catalog_descriptors.bin": "e394b6411475a32df7928bafc4ed935c45371b01e2473793b80091f37520e96d",
+    "config_apply.bin": "cc48cdcaeda891f813f7eaecda630bfdfe939bf66394a85b82dea7a05e48be0e",
+    "config_save_startup.bin": "a41795a2e8678de63bc815afa09f34c4d9d3345d262cc5edfe8fd069fc92d187",
+    "config_validate.bin": "82cdf8f8e69d551041e394d24a19f5ff5acd779b0d0038ac5fe44d897d97a1e8",
+    "query_active.bin": "44b31349f5d03ba0c03137cc8d73576c07ba9e99aef64eb25433fd85d4dab0b7",
+    "query_transaction.bin": "fe84fd3f02b5ca820972ec80ab81307f15815dd499d7dd96b4413ee57af7eb73",
+    "receipt_applied.bin": "465e7a9c196eed6e69cc4a217d6b44bea8d33c9ac38977da4f49c840dad889d5"
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "contract_id": "UCM-SYS-D020-D021-R1",
+  "byte_order": "little-endian",
+  "generated_from": "independent Python struct/zlib implementation",
+  "d020": {
+    "formal_only": true,
+    "socket_path": "/run/ucm/acquisition-measurement-formal-v2.sock",
+    "magic": {
+      "wire": "0x32464143",
+      "ring": "0x32524643",
+      "slot": "0x32534643"
+    },
+    "version": {
+      "major": 2,
+      "minor": 0
+    },
+    "message_bytes": {
+      "hello": 128,
+      "ring_offer": 176,
+      "frame_ready": 320
+    },
+    "message_types": {
+      "hello": 1,
+      "ring_offer": 2,
+      "frame_ready_formal": 3,
+      "diagnostic_reserved_reject": 4,
+      "frame_ack": 5,
+      "frame_gap": 6,
+      "fault": 7,
+      "state": 8,
+      "control_request": 9,
+      "control_result": 10
+    },
+    "ring": {
+      "ring_header_bytes": 256,
+      "slot_header_bytes": 512,
+      "descriptor_offset_bytes": 256,
+      "descriptor_bytes": 256,
+      "shared_payload_offset_bytes": 512,
+      "slot_count": 4,
+      "lane_count": 4,
+      "maximum_samples_per_lane": 8192,
+      "slot_payload_capacity": 65536,
+      "slot_stride_bytes": 66048,
+      "ring_bytes": 264448
+    },
+    "frame_ready_tail_offsets_from_body": {
+      "descriptor_offset_bytes": 200,
+      "descriptor_bytes": 204,
+      "shared_payload_offset_bytes": 208,
+      "descriptor_transport_crc32": 212,
+      "slot_immutable_crc32": 216,
+      "descriptor_payload_offset_bytes": 220,
+      "descriptor_payload_bytes": 224,
+      "reserved_zero": [
+        228,
+        240
+      ]
+    },
+    "crc": {
+      "packet": "CRC32/ISO-HDLC over exact packet with bytes 72..75 zero",
+      "descriptor_internal": "CRC32 over 256 descriptor bytes with bytes 76..79 zero",
+      "descriptor_transport": "CRC32 over exact raw 256 descriptor bytes",
+      "slot_immutable": "CRC32 over exact 512 slot header with bytes 16..19 and 232..235 zero"
+    },
+    "private_reconstruction": "private[0:256]=shared_slot[256:512]; private[256:256+payload_bytes]=shared_slot[512:512+payload_bytes]; descriptor payload_offset remains 256"
+  },
+  "d019_reserved_only": {
+    "wire_magic": "0x32444143",
+    "ring_magic": "0x32524443",
+    "slot_magic": "0x32534443",
+    "frame_ready_bytes": 328,
+    "profile": 4,
+    "lane_count": 8,
+    "implemented": false
+  },
+  "d021": {
+    "token": "0x31535243",
+    "schema_version": 1,
+    "bytes": 384,
+    "crc_offset": 8,
+    "flags_offset": 12,
+    "snapshot_generation_offset": 16,
+    "snapshot_monotonic_ns_offset": 24,
+    "configuration_generation_offset": 32,
+    "system_package_sha256_offset": 40,
+    "configuration_sha256_offset": 72,
+    "record_offsets": [
+      104,
+      184,
+      264
+    ],
+    "record_bytes": 80,
+    "status_policy_version_offset": 344,
+    "reserved_zero": [
+      348,
+      384
+    ],
+    "record_kinds": {
+      "acquisitiond": 1,
+      "measurementd": 2,
+      "link": 3
+    },
+    "record_field_offsets": {
+      "kind": 0,
+      "flags": 4,
+      "instance_id": 8,
+      "primary_generation": 16,
+      "secondary_generation": 24,
+      "heartbeat_sequence": 32,
+      "heartbeat_monotonic_ns": 40,
+      "state": 48,
+      "fault_domain": 52,
+      "fault_code": 56,
+      "age_ms": 60,
+      "fault_generation": 64,
+      "binding_crc32": 72,
+      "maximum_age_ms": 76
+    },
+    "record_generation_semantics": {
+      "acquisitiond": {
+        "instance_id": "acquisition daemon incarnation",
+        "primary_generation": "bound C-to-M producer generation",
+        "secondary_generation": "active configuration generation"
+      },
+      "measurementd": {
+        "instance_id": "measurement daemon incarnation",
+        "primary_generation": "bound C-to-M consumer generation",
+        "secondary_generation": "active configuration generation"
+      },
+      "link": {
+        "instance_id": "link-observation incarnation rotated whenever the bound C-to-M session changes; not the session_id",
+        "primary_generation": "bound C-to-M producer generation",
+        "secondary_generation": "bound C-to-M consumer generation"
+      }
+    },
+    "object_flags": {
+      "snapshot_valid": 1,
+      "configuration_bound": 2,
+      "runtime_chain_ready": 4,
+      "freshness_policy_approved": 8
+    },
+    "policy_binding": [
+      "status_policy_version",
+      "maximum_age_ms[3]",
+      "configuration_generation",
+      "system_package_sha256",
+      "configuration_sha256"
+    ],
+    "runtime_chain_ready_requires": [
+      "policy exact",
+      "configuration bound",
+      "all records present",
+      "all records fresh",
+      "all records active",
+      "all records identity-bound",
+      "no fault latched",
+      "link generations match daemon generations"
+    ]
+  },
+  "vectors": {
+    "caf2_hello_acquisition.bin": {
+      "bytes": 128,
+      "sha256": "dcfd1fafa3880559a9e410fa55d1f0c0e39010c5bb8753eb1f576149786a7db7",
+      "expected": "accept: HELLO/role=acquisition"
+    },
+    "caf2_ring_offer.bin": {
+      "bytes": 176,
+      "sha256": "87bcd088e5ee286cdc115f559724744cdd7c89278a78a5bb51ccdf92915fb601",
+      "expected": "accept: exactly-one formal RO fd metadata"
+    },
+    "caf2_frame_ready.bin": {
+      "bytes": 320,
+      "sha256": "a1a031c7a8d46ddee930cbff02d399633a0c9e7a975ac09e7bf82443f5c5e677",
+      "expected": "accept: formal FRAME_READY"
+    },
+    "cfr2_ring_header.bin": {
+      "bytes": 256,
+      "sha256": "abcb9c1d30a2f04025409dbedbf94b7b359d3ee2f9670cb9727c0c2157ec8704",
+      "expected": "accept: formal ring header"
+    },
+    "cfs2_slot_writing.bin": {
+      "bytes": 512,
+      "sha256": "44bf63cac352beb3ed53dbbf14d9672d1d1170966410368b65518a5bb56632c3",
+      "expected": "accept: WRITING/transition_generation=2"
+    },
+    "cfs2_slot_reading.bin": {
+      "bytes": 512,
+      "sha256": "bd0e3187a4d662df24fa1dcbc18f6fcfa5dbef92d541eda677e24ad64bc024fa",
+      "expected": "accept: READING/transition_generation=4"
+    },
+    "crs1_runtime_chain_ready.bin": {
+      "bytes": 384,
+      "sha256": "286b993fa0688215b61880a41095052a40a5984d6bb1271ff52ed30b49216994",
+      "expected": "accept: flags=0x0f with approved TEST_ONLY policy"
+    },
+    "reject_caf2_wrong_family_cad2.bin": {
+      "bytes": 320,
+      "sha256": "befb2a591b8bf631342bb97f31c9e28c2e286ebe31b2f6b28fc9fc9263523362",
+      "expected": "reject: UCM_AM_WIRE_ERR_MAGIC_V1"
+    },
+    "reject_caf2_diagnostic_type4.bin": {
+      "bytes": 320,
+      "sha256": "d5c8f8e731fcd1718dba72a30406814aaae99f7e3b27dcbfe978dfa7643867b4",
+      "expected": "reject: UCM_AM_WIRE_ERR_TYPE_V1"
+    },
+    "reject_cfr2_wrong_family_cdr2.bin": {
+      "bytes": 256,
+      "sha256": "e0d42bf68486a95dae8dad5b32e1b871c65e8609b903266402e66e9454f97412",
+      "expected": "reject: UCM_AM_WIRE_ERR_MAGIC_V1"
+    },
+    "reject_cfs2_wrong_family_cds2.bin": {
+      "bytes": 512,
+      "sha256": "1236670eed89da5a128865df6d514a3389720b313a9d77f971ec039474282964",
+      "expected": "reject: UCM_AM_WIRE_ERR_MAGIC_V1"
+    },
+    "reject_cfs2_descriptor_internal_crc.bin": {
+      "bytes": 512,
+      "sha256": "4f9e3b365157e675cf617cd6df287dec66180b598f01d3aed26b3014a5a21ca2",
+      "expected": "reject: UCM_AM_WIRE_ERR_CRC_V1"
+    },
+    "crs1_stale_link_not_ready.bin": {
+      "bytes": 384,
+      "sha256": "66df7620947a8fdde7c013e05f60998a9ce27905bcd6874f3a9fa24def107d02",
+      "expected": "accept: flags=0x0b, ready bit clear"
+    },
+    "reject_crs1_claim_ready_stale_link.bin": {
+      "bytes": 384,
+      "sha256": "e22c68ab99c7f8e0f184b218afcfd871fe7c01f23d3f76e1d900100a2563b090",
+      "expected": "reject: UCM_USB_COMPOSITE_FLAGS_V1"
+    },
+    "reject_crs1_bad_crc.bin": {
+      "bytes": 384,
+      "sha256": "9df30b69097b9b66783d65047a332eed7942e85c8ef02714a264e034c4b17d40",
+      "expected": "reject: UCM_USB_COMPOSITE_CRC_V1"
+    }
+  }
+}

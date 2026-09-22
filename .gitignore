@@ -1,0 +1,7 @@
+build/
+artifacts/
+evidence/_tmp/
+**/build/
+**/out/
+**/.qt/
+**/__pycache__/

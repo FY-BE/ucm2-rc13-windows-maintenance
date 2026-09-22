@@ -1,0 +1,5 @@
+# Keep fixture hashes stable across Windows/Linux checkouts.
+*.bin -text
+*.json -text
+*.c -text
+*.ps1 -text
