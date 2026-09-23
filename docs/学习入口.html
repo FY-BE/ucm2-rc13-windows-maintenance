@@ -1,1 +1,30 @@
-<!doctype html><meta charset="utf-8"><title>Windows ConfigStudio 学习入口</title><h1>Windows ConfigStudio 学习入口</h1><p>源码入口：<code>source/ucm_windows_config_next_ui</code>。维护基线：<code>a704b349a5c8eccad7e82ad0d5b0fffbbaa19799</code>。</p><h2>学习主线</h2><ol><li>先读 <code>CMakeLists.txt</code>、<code>main.cpp</code> 和 <code>Main.qml</code>。</li><li>再读 <code>backend/config_session.*</code>、<code>config_transport.h</code> 和 <code>backend/usb_*</code>。</li><li>最后区分离线测试、UI 测试和 HIL/USB 测试。</li></ol><p><a href="学习入口.md">打开 Markdown 版</a></p>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Windows ConfigStudio 学习入口</title>
+  <style>
+    body{font-family:"Microsoft YaHei UI",sans-serif;max-width:900px;margin:36px auto;padding:0 24px;line-height:1.75;color:#1f2937}h1,h2{color:#123b63}.card{border:1px solid #dbe4ee;border-radius:12px;padding:18px;margin:16px 0;background:#f8fbff}.tag{display:inline-block;background:#e6f0fa;color:#174d78;border-radius:999px;padding:2px 10px}.muted{color:#64748b}code{background:#eef2f7;padding:2px 5px;border-radius:4px}a{color:#0969da}
+  </style>
+</head>
+<body>
+  <h1>Windows ConfigStudio 学习入口</h1>
+  <p><span class="tag">当前阶段：认识项目，而不是背完整调用链</span></p>
+  <div class="card">
+    <strong>你现在只需要掌握三件事：</strong>
+    <ol>
+      <li>源码在 <code>source/ucm_windows_config_next_ui</code>。</li>
+      <li><code>main.cpp + Main.qml</code> 启动界面，<code>backend/</code> 负责与设备交互。</li>
+      <li>遇到具体维护问题时，再沿对应调用链深入，不需要一次读完整个框架。</li>
+    </ol>
+  </div>
+  <h2>第一层：项目本身</h2>
+  <p>先看 <a href="学习入口.md">项目源码地图（Markdown）</a>，目标是能用自己的话解释目录、入口和构建结果，不要求记函数。</p>
+  <h2>第二层：小课与练习</h2>
+  <p>后续每课只解决一个问题，例如“窗口如何启动”“一个按钮如何调用 C++”“配置数据如何形成草稿”，每课控制在一个可运行或可观察结果内。</p>
+  <h2>第三层：维护参考</h2>
+  <p><a href="调用链_配置应用与USB回报.md">配置应用与 USB 回报调用链</a>属于维护参考资料。现在不要求通读或背诵；只有维护配置/USB 问题时才查对应段落。</p>
+  <p class="muted">基线：a704b349a5c8eccad7e82ad0d5b0fffbbaa19799。HTML 与 Markdown 必须同步维护。</p>
+</body>
+</html>
